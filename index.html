@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechChiefX Web Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00bfff;
+      --accent: #facc15;
+      --dark: #0a0a0a;
+      --light: #ffffff;
+      --subtext: #cccccc;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+header {
+  background-color: #111;
+  border-bottom: 4px solid var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+
+nav a {
+  margin-left: 30px;
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://via.placeholder.com/1500x800') center/cover no-repeat;
+  animation: fadeIn 2s ease;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: var(--primary);
+  animation: slideUp 1.5s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: var(--accent);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: var(--primary);
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #009acc;
+}
+
+.services {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.services h3 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.services li {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  transition: transform 0.3s;
+  color: var(--subtext);
+}
+
+.services li:hover {
+  transform: translateY(-5px);
+  color: var(--light);
+}
+
+.socials {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: var(--primary);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.3);
+  color: var(--accent);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>TechChiefX Web Studio</h1>
+      <nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+</nav>
+    </div>
+  </header>  <section class="hero">
+    <h2>I Build Clean, Modern & Responsive Websites</h2>
+    <p>Specialized in E-commerce, Real Estate, Portfolio, Personal Brand, Educational, NGO, Church, Booking & Business Websites.</p>
+    <a href="portfolio.html" class="btn">See My Work</a>
+  </section>  <section class="services">
+    <h3>What I Build</h3>
+    <ul>
+      <li>🛒 E-commerce Stores</li>
+      <li>🏠 Real Estate Listings</li>
+      <li>🎓 Educational Platforms</li>
+      <li>🧑‍🎨 Portfolios & Personal Brands</li>
+      <li>🕊️ Church & NGO Sites</li>
+      <li>🧾 Business & Booking Systems</li>
+    </ul>
+  </section>  <div class="socials">
+    <a href="https://wa.me/233543736459" title="WhatsApp">🟢 WhatsApp</a>
+  </div>
+</body>
+</html>

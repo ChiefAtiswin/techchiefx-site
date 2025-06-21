@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - TechChiefX Web Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00bfff;
+      --accent: #facc15;
+      --dark: #0a0a0a;
+      --light: #ffffff;
+      --subtext: #cccccc;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+header, footer {
+  background-color: #111;
+  padding: 20px 40px;
+}
+
+header {
+  border-bottom: 4px solid var(--primary);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+
+nav a {
+  margin-left: 30px;
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.portfolio-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.portfolio-section h2 {
+  font-size: 2.8rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.portfolio-item {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.portfolio-item .info {
+  padding: 20px;
+}
+
+.portfolio-item .info h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.portfolio-item .info p {
+  color: var(--subtext);
+  font-size: 0.95rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.cta a {
+  background-color: var(--primary);
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta a:hover {
+  background-color: #009acc;
+}
+
+footer {
+  text-align: center;
+  color: var(--subtext);
+  font-size: 0.9rem;
+  border-top: 2px solid var(--primary);
+  margin-top: 60px;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>TechChiefX Web Studio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>  <section class="portfolio-section">
+    <h2>My Recent Projects</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/5632406/pexels-photo-5632406.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800" alt="E-Commerce Project">
+        <div class="info">
+          <h3>Modern E-Commerce Store</h3>
+          <p>Fully responsive online shop with product filtering and payment gateway integration.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800" alt="Real Estate Site">
+        <div class="info">
+          <h3>Luxury Property Listings</h3>
+          <p>A clean and searchable real estate platform for listing and contacting property agents.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800" alt="Portfolio Site">
+        <div class="info">
+          <h3>Creative Designer Portfolio</h3>
+          <p>Personal brand portfolio with gallery, testimonials, and project highlights.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800" alt="Education Portal">
+        <div class="info">
+          <h3>Online School Portal</h3>
+          <p>Learning dashboard with course pages, quiz modules, and student logins.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800" alt="Church Website">
+        <div class="info">
+          <h3>Church Outreach Platform</h3>
+          <p>Donation tools, sermon uploads, event calendars, and ministry outreach content.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.pexels.com/photos/4778626/pexels-photo-4778626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800" alt="Booking System">
+        <div class="info">
+          <h3>Event Booking Website</h3>
+          <p>Online appointment and event booking system with calendar and confirmation emails.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <p>Want something like this? Let's create your dream website.</p>
+      <a href="https://wa.me/233543736459">Hire Me on WhatsApp</a>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 TechChiefX Web Studio. All rights reserved.</p>
+    <p>
+      Contact: <a href="mailto:techchiefxbusiness@gmail.com">techchiefxbusiness@gmail.com</a> |
+      <a href="tel:+233543736459">+233543736459</a> /
+      <a href="tel:+2335997749426">+2335997749426</a>
+    </p>
+  </footer>
+</body>
+</html>
